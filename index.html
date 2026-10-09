@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Дарья Дихтяренко — агент по страхованию жизни</title>
+  <meta name="description" content="Персональный агент по страхованию жизни: защита семьи, накопительные и пенсионные программы. Бесплатная консультация и подбор полиса под ваши цели." />
+  <meta property="og:title" content="Дарья Дихтяренко — страхование жизни" />
+  <meta property="og:description" content="Защита семьи, накопления на образование детей, пенсионный капитал." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="img/family.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Fira+Sans+Extra+Condensed:wght@400;500;600&family=Fira+Sans+Condensed:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ============ INTRO: счётчик 0→100 ============ -->
+  <div class="loader" id="loader" aria-hidden="true"><span class="loader__count" id="loaderCount">0</span></div>
+
+  <!-- ============ ШАПКА (фиксированная) ============ -->
+  <header class="bar" id="bar">
+    <a href="#top" class="bar__name" id="barName">
+      <span class="bar__big" id="bigName">Дарья Дихтяренко</span>
+      <span class="bar__section" id="barSection" aria-hidden="true"></span>
+    </a>
+    <div class="bar__right">
+      <a href="#contact" class="bar__cta">Связаться <span class="arrows">→→</span></a>
+      <button type="button" class="burger" id="burger" aria-label="Меню" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <nav class="menu" id="menu" aria-label="Меню" hidden>
+    <a href="#top">Главная</a>
+    <a href="#about">Обо мне</a>
+    <a href="#programs">Программы</a>
+    <a href="#contact">Контакты</a>
+  </nav>
+
+  <div class="site" id="site">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top" data-section="">
+      <ul class="hero__list">
+        <li>Страхование жизни</li>
+        <li>Защита семьи</li>
+        <li>Накопления</li>
+        <li>Пенсионный план</li>
+      </ul>
+
+      <div class="hero__photo">
+        <div class="hero__frame">
+          <img src="img/hero.jpg" alt="Дарья Дихтяренко — портрет" class="parallax-img" data-speed="-0.08" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ БЕГУЩАЯ СТРОКА со вставками фото ============ -->
+    <section class="mq" aria-label="Направления страхования">
+      <div class="mq__row" data-dir="1">
+        <span>Защита семьи</span><img src="img/family.jpg" alt="" />
+        <span>Накопления</span><img src="img/savings.jpg" alt="" />
+        <span>Пенсия</span><img src="img/seniors.jpg" alt="" />
+        <span>Образование детей</span><img src="img/graduation.jpg" alt="" />
+        <span>Ипотека</span><img src="img/house.jpg" alt="" />
+      </div>
+      <div class="mq__row" data-dir="-1">
+        <span>Наследство</span><img src="img/handshake.jpg" alt="" />
+        <span>Критические болезни</span><img src="img/mother-baby.jpg" alt="" />
+        <span>Несчастный случай</span><img src="img/kids-play.jpg" alt="" />
+        <span>Инвестиции</span><img src="img/desk.jpg" alt="" />
+      </div>
+    </section>
+
+    <!-- ============ ПРОГРАММЫ (как «проекты» в референсе) ============ -->
+    <section class="programs" id="programs" data-section="Программы">
+
+      <!-- Программа 1 -->
+      <article class="program" data-name="Защита семьи" data-teaser="img/family.jpg">
+        <div class="program__head">
+          <h2 class="program__title">Защита семьи</h2>
+          <button type="button" class="oval oval--title" data-step="-1">Предыдущая программа <span>↗</span></button>
+        </div>
+        <dl class="meta">
+          <dt>Срок</dt><dd>5 — 30 лет</dd>
+          <dt>Программа</dt><dd>Защита семьи</dd>
+          <dt>Покрытие</dt><dd>Уход из жизни<br />Инвалидность I–II группы<br />Критические заболевания<br />Несчастный случай<br />Освобождение от взносов<br />Выплата семье без налогов*</dd>
+        </dl>
+        <div class="program__body">
+          <div class="program__text">
+            <p class="program__word">Программа</p>
+            <p>Классический рисковый полис, который отвечает на главный вопрос: что будет с близкими, если со мной что-то случится? Мы считаем реальную сумму, которая закроет ипотеку, обучение детей и несколько лет привычной жизни семьи — без лишних опций и переплат. Я сопровождаю клиента не только при подписании, но и в самый сложный момент — помогаю семье собрать документы и получить выплату. За 8 лет все страховые случаи моих клиентов были выплачены.</p>
+          </div>
+          <div class="collage">
+            <img class="cutout k1" src="img/baby-feet.jpg" alt="" data-speed="0.12" />
+            <figure class="pol k2" style="--r:-4deg" data-speed="0.05"><img src="img/family.jpg" alt="Семья на прогулке" /></figure>
+            <figure class="pol k3" style="--r:7deg" data-speed="-0.04"><img src="img/mother-baby.jpg" alt="Будущая мама" /></figure>
+            <figure class="pol k4" style="--r:-9deg" data-speed="0.09"><img src="img/father-child.jpg" alt="Родители с ребёнком" /></figure>
+            <figure class="pol k5" style="--r:12deg" data-speed="-0.07"><img src="img/house.jpg" alt="Семья у дома" /></figure>
+          </div>
+        </div>
+      </article>
+
+      <!-- Программа 2 -->
+      <article class="program" data-name="Капитал на учёбу" data-teaser="img/graduation.jpg" hidden>
+        <div class="program__head">
+          <h2 class="program__title">Капитал на учёбу</h2>
+          <button type="button" class="oval oval--title" data-step="-1">Предыдущая программа <span>↗</span></button>
+        </div>
+        <dl class="meta">
+          <dt>Срок</dt><dd>7 — 18 лет</dd>
+          <dt>Программа</dt><dd>Накопительное страхование</dd>
+          <dt>Включено</dt><dd>Гарантированная сумма к 18 годам<br />Защита взносов родителя<br />Инвестиционный доход<br />Гибкий график взносов<br />Выплата разово или частями</dd>
+        </dl>
+        <div class="program__body">
+          <div class="program__text">
+            <p class="program__word">Программа</p>
+            <p>Накопительное страхование жизни, где цель — конкретная сумма к совершеннолетию ребёнка. Если с родителем что-то случится, страховая компания продолжает платить взносы за него, и ребёнок всё равно получит свой капитал в срок. Я помогаю рассчитать реальную стоимость образования через 10–15 лет и подобрать комфортный ежемесячный взнос, который не бьёт по семейному бюджету.</p>
+          </div>
+          <div class="collage">
+            <img class="cutout k1" src="img/savings.jpg" alt="" data-speed="0.12" />
+            <figure class="pol k2" style="--r:-4deg" data-speed="0.05"><img src="img/graduation.jpg" alt="Выпускница" /></figure>
+            <figure class="pol k3" style="--r:7deg" data-speed="-0.04"><img src="img/kids-play.jpg" alt="Дети на прогулке" /></figure>
+            <figure class="pol k4" style="--r:-9deg" data-speed="0.09"><img src="img/father-child.jpg" alt="Семья" /></figure>
+            <figure class="pol k5" style="--r:12deg" data-speed="-0.07"><img src="img/desk.jpg" alt="Расчёт" /></figure>
+          </div>
+        </div>
+      </article>
+
+      <!-- Программа 3 -->
+      <article class="program" data-name="Пенсионный капитал" data-teaser="img/beach-seniors.jpg" hidden>
+        <div class="program__head">
+          <h2 class="program__title">Пенсионный капитал</h2>
+          <button type="button" class="oval oval--title" data-step="-1">Предыдущая программа <span>↗</span></button>
+        </div>
+        <dl class="meta">
+          <dt>Срок</dt><dd>10 — 30 лет</dd>
+          <dt>Программа</dt><dd>Пенсионный план</dd>
+          <dt>Включено</dt><dd>Личная пенсия независимо от государства<br />Выплата разово или пожизненно<br />Защита жизни на весь срок<br />Защита капитала от кредиторов<br />Передача наследникам</dd>
+        </dl>
+        <div class="program__body">
+          <div class="program__text">
+            <p class="program__word">Программа</p>
+            <p>Долгосрочный план, который превращает регулярные небольшие взносы в личную пенсию — независимо от государственной системы. Капитал защищён от кредиторов и может быть передан наследникам без долгих процедур. Мы вместе определяем желаемый доход на пенсии, рассчитываем сумму и выбираем стратегию: консервативную с гарантией или с инвестиционным доходом.</p>
+          </div>
+          <div class="collage">
+            <img class="cutout k1" src="img/wedding.jpg" alt="" data-speed="0.12" />
+            <figure class="pol k2" style="--r:-4deg" data-speed="0.05"><img src="img/seniors.jpg" alt="Пожилая пара" /></figure>
+            <figure class="pol k3" style="--r:7deg" data-speed="-0.04"><img src="img/beach-seniors.jpg" alt="Прогулка у моря" /></figure>
+            <figure class="pol k4" style="--r:-9deg" data-speed="0.09"><img src="img/house.jpg" alt="Дом" /></figure>
+            <figure class="pol k5" style="--r:12deg" data-speed="-0.07"><img src="img/handshake.jpg" alt="Подписание" /></figure>
+          </div>
+        </div>
+      </article>
+
+      <!-- размытые «следующие программы» -->
+      <div class="teasers">
+        <button type="button" class="teaser teaser--next" data-step="1">
+          <img src="" alt="" data-role="next-img" />
+          <span class="teaser__name" data-role="next-name"></span>
+          <span class="oval">Следующая программа <span>→</span></span>
+        </button>
+        <button type="button" class="teaser teaser--after" data-step="2">
+          <img src="" alt="" data-role="after-img" />
+          <span class="teaser__name" data-role="after-name"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ============ КРУГЛЫЕ Ч/Б ФОТО ============ -->
+    <section class="faces">
+      <div class="face"><img src="img/hero.jpg" alt="Дарья Дихтяренко" loading="lazy" style="object-position:45% 30%" /></div>
+      <div class="face"><img src="img/consult.jpg" alt="Консультация" loading="lazy" /></div>
+      <div class="face"><img src="img/mentor.jpg" alt="Работа с командой" loading="lazy" /></div>
+      <div class="face"><img src="img/desk.jpg" alt="Рабочее место" loading="lazy" /></div>
+    </section>
+
+    <!-- ============ ОБО МНЕ ============ -->
+    <section class="about" id="about" data-section="Обо мне">
+      <p class="about__text">Я — независимый агент по страхованию жизни, и моя работа начинается с разговора о том, что для вас по-настоящему важно. За 8 лет я помогла более чем 600 семьям выстроить финансовую подушку: защитить близких, накопить на образование детей и спокойно смотреть в сторону пенсии. Я не продаю «коробочные» полисы — я подбираю решение под вашу жизнь, бюджет и цели и объясняю каждый пункт договора простыми словами.</p>
+
+      <!-- диагональ из полароидов -->
+      <div class="trail">
+        <figure class="pol t1" style="--r:-22deg" data-speed="0.04"><img src="img/handshake.jpg" alt="" /></figure>
+        <figure class="pol t2" style="--r:-14deg" data-speed="0.07"><img src="img/beach-seniors.jpg" alt="" /></figure>
+        <figure class="pol t3" style="--r:10deg" data-speed="0.02"><img src="img/kids-play.jpg" alt="" /></figure>
+        <figure class="pol t4" style="--r:-28deg" data-speed="0.06"><img src="img/consult.jpg" alt="" /></figure>
+        <figure class="pol t5" style="--r:24deg" data-speed="0.03"><img src="img/baby-feet.jpg" alt="" /></figure>
+        <figure class="pol t6" style="--r:-32deg" data-speed="0.05"><img src="img/wedding.jpg" alt="" /></figure>
+        <figure class="pol t7" style="--r:0deg" data-speed="0.02"><img src="img/family.jpg" alt="" /></figure>
+        <svg class="arc a1" viewBox="0 0 300 120" aria-hidden="true"><defs><path id="arc1" d="M 20 30 Q 160 20 280 100" /></defs><text style="--arc:#b6a271"><textPath href="#arc1" startOffset="50%" text-anchor="middle">Защита семьи</textPath></text></svg>
+        <svg class="arc a2" viewBox="0 0 300 120" aria-hidden="true"><defs><path id="arc2" d="M 20 100 Q 150 10 280 60" /></defs><text style="--arc:#6e9a7a"><textPath href="#arc2" startOffset="50%" text-anchor="middle">Накопления</textPath></text></svg>
+        <svg class="arc a3" viewBox="0 0 300 120" aria-hidden="true"><defs><path id="arc3" d="M 20 40 Q 150 70 280 100" /></defs><text style="--arc:#6d9dbd"><textPath href="#arc3" startOffset="50%" text-anchor="middle">Пенсия</textPath></text></svg>
+      </div>
+
+      <div class="about__text about__text--2">
+        <p>Я работаю с 10+ надёжными страховыми компаниями, поэтому могу честно сравнить условия и выбрать лучшее предложение, а не то, что выгодно продать. После подписания я остаюсь рядом: напоминаю о взносах, пересматриваю полис при рождении ребёнка или покупке жилья и помогаю при страховом случае.</p>
+        <p>Вне работы я мама, любительница долгих прогулок и хороших книг. Я верю, что спокойствие близких — лучшая инвестиция, и что о деньгах можно говорить просто, честно и без страха.</p>
+      </div>
+    </section>
+
+    <!-- ============ ТАЙМЛАЙН (бесконечная лента) ============ -->
+    <section class="journey" id="journey" data-section="Путь">
+      <div class="journey__track" id="journeyTrack">
+        <article class="card"><h3>2025</h3><h4>Сейчас</h4><img src="img/consult.jpg" alt="" loading="lazy" /><p>Веду более 600 клиентов, консультирую онлайн по всей стране и обучаю новых агентов.</p></article>
+        <article class="card"><h3>2024</h3><h4>Наставник</h4><img src="img/mentor.jpg" alt="" loading="lazy" /><p>Запустила программу наставничества: 15 агентов прошли обучение в моей команде.</p></article>
+        <article class="card"><h3>2023</h3><h4>Топ-10 агентов</h4><img src="img/handshake.jpg" alt="" loading="lazy" /><p>Вошла в десятку лучших агентов региона по объёму защитных программ.</p></article>
+        <article class="card"><h3>2021</h3><h4>Независимый агент</h4><img src="img/desk.jpg" alt="" loading="lazy" /><p>Стала независимым брокером и начала работать сразу с несколькими страховыми компаниями.</p></article>
+        <article class="card"><h3>2019</h3><h4>Детские программы</h4><img src="img/kids-play.jpg" alt="" loading="lazy" /><p>Сфокусировалась на накопительных программах для образования детей — 120 полисов.</p></article>
+        <article class="card"><h3>2017</h3><h4>Первый полис</h4><img src="img/family.jpg" alt="" loading="lazy" /><p>Получила лицензию и оформила первый полис — для семьи близких друзей.</p></article>
+      </div>
+    </section>
+
+    <!-- ============ КОНТАКТЫ ============ -->
+    <footer class="footer" id="contact" data-section="Контакты">
+      <span class="footer__label">Email</span>
+      <div class="footer__mail">
+        <a href="mailto:hello@example.com" class="footer__email">hello@example.com</a>
+      </div>
+
+      <ul class="socials">
+        <li><a href="https://t.me/" target="_blank" rel="noreferrer">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M10 9c14-3 30-2 44 0 3 1 4 3 4 6 1 12 1 24-1 36-1 3-3 5-6 5-13 1-27 2-40 0-3-1-5-3-5-6-1-12-1-24 0-36 0-3 2-5 4-5z" /><path d="M17 31l27-11-5 25-9-7-5 5 1-8 12-10-15 8z" /></svg>
+          Telegram</a></li>
+        <li><a href="https://wa.me/" target="_blank" rel="noreferrer">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M10 9c14-3 30-2 44 0 3 1 4 3 4 6 1 12 1 24-1 36-1 3-3 5-6 5-13 1-27 2-40 0-3-1-5-3-5-6-1-12-1-24 0-36 0-3 2-5 4-5z" /><path d="M20 46l2-8c-5-9 2-20 11-19 9 0 14 10 10 18-3 7-12 10-19 6z" /><path d="M27 27c0 5 4 9 9 10l2-3-3-2-2 1c-2-1-3-2-4-4l1-2-2-3z" /></svg>
+          WhatsApp</a></li>
+        <li><a href="https://instagram.com/" target="_blank" rel="noreferrer">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M10 9c14-3 30-2 44 0 3 1 4 3 4 6 1 12 1 24-1 36-1 3-3 5-6 5-13 1-27 2-40 0-3-1-5-3-5-6-1-12-1-24 0-36 0-3 2-5 4-5z" /><path d="M32 22c7 0 11 5 10 11-1 6-7 9-12 8-6-1-9-6-8-11 1-5 5-8 10-8z" /><circle cx="46" cy="17" r="3" /></svg>
+          Instagram</a></li>
+      </ul>
+
+      <p class="footer__note">* Условия зависят от страховой компании и законодательства. Информация на сайте не является публичной офертой.</p>
+
+      <div class="footer__bottom">
+        <span>© <span id="year">2026</span> Дарья Дихтяренко</span>
+        <a href="#top" class="totop" aria-label="Наверх"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="18" /><path d="M20 30V10m-5 5 5-5 5 5M20 30v-8m-5 5 5-5 5 5" /></svg></a>
+        <span>Лицензированный агент по страхованию жизни</span>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
